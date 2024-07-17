@@ -1,66 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Expense Splitter Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description
 
-## About Laravel
+The Expense Splitter application is designed to help users manage shared expenses among friends, family, or colleagues. It allows users to create groups, add expenses, split costs, and track who owes whom. The application aims to simplify the process of managing shared expenses and ensure transparency and fairness in cost-sharing.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Key Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **User Authentication and Profile Management:** Users can sign up, log in, and manage their profiles.
+- **Group Creation and Management:** Users can create groups for different events or purposes (e.g., trips, dinners, shared apartments).
+- **Expense Entry and Splitting:** Users can add expenses, specify the amount, and select the group members involved. The application will automatically split the expenses among the members.
+- **Debt Tracking and Settlement:** The application tracks who owes whom and provides options for settling debts.
+- **Notifications and Reminders:** Users receive notifications and reminders about pending debts and new expenses.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## User Stories
 
-## Learning Laravel
+### User Registration and Login
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- As a user, I want to register an account so that I can use the application.
+- As a user, I want to log in to my account so that I can access my groups and expenses.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Profile Management
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- As a user, I want to update my profile information so that my details are accurate.
+- As a user, I want to change my password so that my account remains secure.
 
-## Laravel Sponsors
+### Group Creation and Management
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- As a user, I want to create a new group so that I can manage expenses for a specific event or purpose.
+- As a user, I want to invite other users to my group so that we can share expenses.
+- As a user, I want to view a list of all my groups so that I can manage them easily.
 
-### Premium Partners
+### Adding and Splitting Expenses
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- As a user, I want to add a new expense to a group so that the cost can be shared among the members.
+- As a user, I want to specify the amount and description of the expense so that it is clear what the expense is for.
+- As a user, I want to select the group members involved in the expense so that the cost is split correctly.
 
-## Contributing
+### Viewing and Managing Expenses
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- As a user, I want to view a list of all expenses in a group so that I can see what has been spent.
+- As a user, I want to see how much each member owes or is owed so that I can keep track of debts.
 
-## Code of Conduct
+### Debt Tracking and Settlement
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- As a user, I want to view a summary of who owes whom so that I can understand the financial situation.
+- As a user, I want to mark debts as settled so that the records are up to date.
+- As a user, I want to receive notifications about pending debts so that I can settle them promptly.
 
-## Security Vulnerabilities
+### Notifications and Reminders
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- As a user, I want to receive notifications when a new expense is added to a group so that I am aware of new costs.
+- As a user, I want to receive reminders about pending debts so that I can settle them on time.
 
-## License
+## Implementation Tech-stack 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Backend:** Laravel for the backend, and MySQL for the database.
+- **Frontend:** Blade for the frontend, and integrate Tailwind CSS for styling.
+- **APIs:** ~~Utilize financial APIs if needed for currency conversion or other financial data.~~
+
+## Tailwind CSS Focus
+
+- **Flexbox and Grid:** Use flexbox and grid to create responsive layouts for the group management, expense entry, and debt tracking pages.
+- **Components:** Create reusable components for forms, lists, and notifications to ensure a consistent design.
+- **Responsive Design:** Ensure the application is fully responsive and works well on both desktop and mobile devices.
